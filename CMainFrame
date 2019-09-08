@@ -1,0 +1,19 @@
+package com.dyt;
+
+public class CMainFrame {
+	protected CMainFrame() {}
+	public boolean PreCreateWindow() {
+		return true;
+	}
+	public boolean LoadFrame() {
+		return true;
+	}
+	public void AssertValid() {}
+	public void Dump() {}
+	protected int OnCreate() {
+		return 0;
+	}
+    protected void OnViewCustomize() {}
+    protected void OnApplicationLook() {}
+    protected void OnUpdateApplicationLook() {}
+}
