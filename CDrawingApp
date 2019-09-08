@@ -1,0 +1,24 @@
+package com.dyt;
+
+public class CDrawingApp {
+	public CDrawingApp() {
+		m_bHiColorIcons=true;
+	}
+	public boolean InitInstance() {
+		return true;
+	}
+	public int ExitInstance() {
+		return ExitInstance();
+	}
+	public boolean m_bHiColorIcons;
+	public void PreLoadState() {}
+	public void LoadCustomState() {}
+    public void SaveCustomState() {}
+    public class CAboutDlg{
+    	public CAboutDlg() {}
+    	protected void DoDataExchange() {}
+    	protected void OnAppAbout() {
+    		this.DoDataExchange();
+    	}
+    }
+}
