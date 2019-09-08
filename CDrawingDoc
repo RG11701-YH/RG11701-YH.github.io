@@ -1,0 +1,15 @@
+package com.dyt;
+import java.util.Arrays;
+public class CDrawingDoc {
+	protected CDrawingDoc() {}
+	public Arrays m_Elements;
+	public boolean OnNewDocument() {
+		return true;
+	}
+    public void Serialize() {}
+    public void InitializeSearchContent() {}
+    public void OnDrawThumbnail() {}
+    public void AssertValid() {}
+    public void Dump() {}
+    protected void SetSearchContent() {}
+}
