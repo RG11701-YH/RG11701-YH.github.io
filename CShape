@@ -1,0 +1,39 @@
+package com.dyt;
+
+public class CShape {
+	public CShape() {}
+	public void Draw() {}//绘制图元
+	public boolean isMatched() {
+		return true;//点是否落在图形内部
+	}
+	public void Serialize() {}
+	public void setPen(int bt,int bw) {
+		borderType=bt;
+		borderWidth=bw;
+	}
+	public void getPen(int bt,int bw) {
+		bt = borderType;
+ 		bw = borderWidth;
+	}
+	public void setBrush(int ft) {
+		fillType=ft;
+	}
+	public void getBrush(int ft) {
+		ft=fillType;
+	}
+	public void setShapeValue(int x,int y,int w,int h) {
+		orgX=x;
+		orgY=y;
+		width=w;
+		heigh=h;
+	}
+     protected int orgX;//原点坐标
+     protected int orgY;
+     protected int width;
+     protected int heigh;
+     protected int borderType;//边界线型--实线、虚线、虚点线等
+     protected int borderWidth;//边界宽度
+     protected String text;//输入文本
+     protected int type;
+     protected int fillType;//填充类型--实心、双对角、十字交叉等
+}
