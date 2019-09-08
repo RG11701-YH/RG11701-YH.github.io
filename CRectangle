@@ -1,0 +1,33 @@
+package com.dyt;
+
+public class CRectangle extends CShape {
+	public CRectangle() {}
+	public CRectangle(int x,int y,int w,int h) {
+		orgX=x;
+		orgY=y;
+		width=w;
+		heigh=h;
+	}
+    public void Draw() {}
+    public boolean isMatched(CShape pnt) {
+    	if(pnt.orgX>=(orgX-width/2)&&pnt.orgX<=(orgX+width/2)&&pnt.orgY>=(orgY-heigh/2)&&pnt.orgY<=(orgY+heigh/2))
+    		return true;
+    	else
+    		return false;
+    }
+    public void Serialize() {}
+    public void setShapeValue(int x,int y,int w,int h,String t) {
+    	orgX=x;
+		orgY=y;
+		width=w;
+		heigh=h;
+    }
+    public void getShapeValue(int x,int y,int w,int h,String t) {
+    	x=orgX;
+    	y=orgY;
+    	w=width;
+    	h=heigh;
+    }
+    private int width;
+    private int heigh;
+}
