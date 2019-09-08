@@ -1,0 +1,28 @@
+package com.dyt;
+
+public class CCircle extends CShape {
+	public CCircle(int x,int y,int w) {
+		orgX=x;
+		orgY=y;
+		rid=w;
+	}
+	public void Draw() {}
+	public boolean isMatched(CShape pnt) {
+		if(((pnt.orgX-orgX)*(pnt.orgX-orgX)+(pnt.orgY-orgY)*(pnt.orgY-orgY)) <= rid*rid)
+			return true;
+		else
+			return false;
+	}
+	public void Serialize() {}
+	public void setShapeValue(int x,int y,int w,int h,String t) {
+		orgX=x;
+		orgY=y;
+		rid=w;
+	}
+	public void getShapeValue(int x,int y,int w,int h,String t) {
+		x=orgX;
+		y=orgY;
+		w=rid;
+	}
+	private int rid;
+}
