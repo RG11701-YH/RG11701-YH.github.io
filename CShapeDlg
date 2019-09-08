@@ -1,0 +1,29 @@
+package com.dyt;
+
+public class CShapeDlg {
+	public CShapeDlg() {}
+    protected void doDateExchange() {}
+    public boolean onInitDialog() {
+    	return true;
+    }
+    public boolean clk;
+    public int X;
+    public int y;
+    public int w;
+    public int h;
+    public String text;
+    public int lw;
+    public int pen_type;
+    public int brush_type;
+    public int comboxIndex;
+    public void getShapeValueFromDlg(CShape sp) {}
+    public void setShapeValueToDlg(CShape sp) {}
+    public void onActivate(boolean bMinimized) {}
+    public void onCbnSelchangeCombo1() {}
+    public void onBnClickedButton2() {}
+    public void onBnClickedButton1() {}
+    public void onLbnSelchangeList3() {}
+    public void onBnClickedOk() {}
+    public void onLbnSelchangeList1() {}
+    }
+
