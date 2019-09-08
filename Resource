@@ -1,0 +1,45 @@
+package com.dyt;
+
+public class Resource {
+	public final int IDCANCEL = 2;
+	public final int IDD_ABOUTBOX = 100;
+	public final int IDP_OLE_INIT_FAILED = 100;
+	public final int IDR_POPUP_EDIT = 119;
+	public final int ID_STATUSBAR_PANE1 = 20;
+	public final int ID_STATUSBAR_PANE2 = 121;
+	public final int IDS_STATUS_PANE1 = 122;
+	public final int IDS_STATUS_PANE2 = 123;
+	public final int IDS_TOOLBAR_STANDARD = 124;
+	public final int IDS_TOOLBAR_CUSTOMIZE = 125;
+	public final int ID_VIEW_CUSTOMIZE = 126;
+	public final int IDR_MAINFRAME = 128;
+	public final int IDR_MAINFRAME_256 = 129;
+	public final int IDR_DrawingTYPE = 130;
+	public final int IDR_THEME_MENU = 200;
+	public final int ID_SET_STYLE = 201;
+	public final int ID_VIEW_APPLOOK_WIN_2000 = 205;
+	public final int ID_VIEW_APPLOOK_OFF_XP = 206;
+	public final int ID_VIEW_APPLOOK_WIN_XP = 207;
+	public final int ID_VIEW_APPLOOK_OFF_2003 = 208;
+	public final int ID_VIEW_APPLOOK_VS_2005 = 209;
+	public final int ID_VIEW_APPLOOK_VS_2008 = 210;
+	public final int ID_VIEW_APPLOOK_OFF_2007_BLUE = 215;
+	public final int ID_VIEW_APPLOOK_OFF_2007_BLACK = 216;
+	public final int ID_VIEW_APPLOOK_OFF_2007_SILVER = 217;
+	public final int ID_VIEW_APPLOOK_OFF_2007_AQUA = 218;
+	public final int ID_VIEW_APPLOOK_WINDOWS_7 = 219;
+	public final int IDS_EDIT_MENU = 306;
+	public final int IDD_SHAPEDLG = 311;
+	public final int IDC_COMBO1 = 1000;
+	public final int IDC_EDIT1 = 1001;
+	public final int IDC_EDIT2 = 1002;
+	public final int IDC_EDIT3 = 1003;
+	public final int IDC_EDIT4 = 1004;
+	public final int IDC_EDIT5 = 1005;
+	public final int IDC_EDIT7 = 1006;
+	public final int IDC_LIST1 = 1007;
+	public final int IDC_LIST2 = 1007;
+	public final int IDC_MFCCOLORBUTTON1 = 1008;
+	public final int IDC_LIST3 = 1009;
+	public final int IDC_MFCCOLORBUTTON2 = 1010;
+}
