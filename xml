@@ -1,0 +1,201 @@
+public static void xml() throws Exception{
+    //参数url化
+    String city = java.net.URLEncoder.encode("荆州", "utf-8");
+    String apiUrl = "sojson天气API URL";
+    //拼地址
+    String apiUrl = String.format("%s?city=%s",apiUrl,city);
+    //开始请求
+    URL url= new URL(apiUrl);
+    URLConnection open = url.openConnection();
+    InputStream input = open.getInputStream();
+    String result = org.apache.commons.io.IOUtils.toString(input,"utf-8");
+    //输出
+    System.out.println(result);
+}
+<resp>
+    <city>荆州</city>
+    <updatetime>13:05</updatetime>
+    <wendu>34</wendu>
+    <fengli>
+        <![CDATA[ 5级 ]]>
+    </fengli>
+    <shidu>52%</shidu>
+    <fengxiang>西风</fengxiang>
+    <sunrise_1>05:56</sunrise_1>
+    <sunset_1>19:05</sunset_1>
+    <sunrise_2/>
+    <sunset_2/>
+    <yesterday>
+        <date_1>11日星期五</date_1>
+        <high_1>高温 33℃</high_1>
+        <low_1>低温 26℃</low_1>
+        <day_1>
+            <type_1>阵雨</type_1>
+            <fx_1>南风</fx_1>
+            <fl_1>
+                <![CDATA[ <3级 ]]>
+            </fl_1>
+        </day_1>
+        <night_1>
+            <type_1>多云</type_1>
+            <fx_1>南风</fx_1>
+            <fl_1>
+                <![CDATA[ <3级 ]]>
+            </fl_1>
+        </night_1>
+    </yesterday>
+    <forecast>
+        <weather>
+            <date>12日星期六</date>
+            <high>高温 35℃</high>
+            <low>低温 26℃</low>
+            <day>
+                <type>多云</type>
+                <fengxiang>西南风</fengxiang>
+                <fengli>
+                    <![CDATA[ 3-4级 ]]>
+                </fengli>
+            </day>
+            <night>
+                <type>多云</type>
+                <fengxiang>西南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </night>
+        </weather>
+        <weather>
+            <date>13日星期天</date>
+            <high>高温 35℃</high>
+            <low>低温 26℃</low>
+            <day>
+                <type>多云</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ 3-4级 ]]>
+                </fengli>
+            </day>
+            <night>
+                <type>多云</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </night>
+        </weather>
+        <weather>
+            <date>14日星期一</date>
+            <high>高温 33℃</high>
+            <low>低温 26℃</low>
+            <day>
+                <type>阵雨</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </day>
+            <night>
+                <type>多云</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </night>
+        </weather>
+        <weather>
+            <date>15日星期二</date>
+            <high>高温 34℃</high>
+            <low>低温 26℃</low>
+            <day>
+                <type>阵雨</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </day>
+            <night>
+                <type>多云</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </night>
+        </weather>
+        <weather>
+            <date>16日星期三</date>
+            <high>高温 35℃</high>
+            <low>低温 26℃</low>
+            <day>
+                <type>多云</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </day>
+            <night>
+                <type>多云</type>
+                <fengxiang>南风</fengxiang>
+                <fengli>
+                    <![CDATA[ <3级 ]]>
+                </fengli>
+            </night>
+        </weather>
+    </forecast>
+    <zhishus>
+        <zhishu>
+            <name>晨练指数</name>
+            <value>较适宜</value>
+            <detail>早晨气象条件较适宜晨练，但风力稍大，晨练时会感觉有点凉，晨练时着装不要过于单薄，选择避风的地点。</detail>
+        </zhishu>
+        <zhishu>
+            <name>舒适度</name>
+            <value>较不舒适</value>
+            <detail>白天天气多云，同时会感到有些热，不很舒适。</detail>
+        </zhishu>
+        <zhishu>
+            <name>穿衣指数</name>
+            <value>炎热</value>
+            <detail>天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。</detail>
+        </zhishu>
+        <zhishu>
+            <name>感冒指数</name>
+            <value>少发</value>
+            <detail>各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。</detail>
+        </zhishu>
+        <zhishu>
+            <name>晾晒指数</name>
+            <value>适宜</value>
+            <detail>天气不错，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！</detail>
+        </zhishu>
+        <zhishu>
+            <name>旅游指数</name>
+            <value>一般</value>
+            <detail>天气较好，温度高，让人感觉热，幸好风比较大，能缓解炎热的天气。外出旅游请注意防暑降温和防晒。</detail>
+        </zhishu>
+        <zhishu>
+            <name>紫外线强度</name>
+            <value>中等</value>
+            <detail>属中等强度紫外线辐射天气，外出时建议涂擦SPF高于15、PA+的防晒护肤品，戴帽子、太阳镜。</detail>
+        </zhishu>
+        <zhishu>
+            <name>洗车指数</name>
+            <value>较适宜</value>
+            <detail>较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。</detail>
+        </zhishu>
+        <zhishu>
+            <name>运动指数</name>
+            <value>较适宜</value>
+            <detail>天气较好，但风力较大，推荐您进行室内运动，若在户外运动请注意防风。</detail>
+        </zhishu>
+        <zhishu>
+            <name>约会指数</name>
+            <value>不适宜</value>
+            <detail>风卷起热浪袭来，外出约会可能会因此败兴而归，最好在凉爽的室内约会。</detail>
+        </zhishu>
+        <zhishu>
+            <name>雨伞指数</name>
+            <value>不带伞</value>
+            <detail>天气较好，不会降水，因此您可放心出门，无须带雨伞。</detail>
+        </zhishu>
+    </zhishus>
+</resp>
