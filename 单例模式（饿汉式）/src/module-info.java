@@ -1,0 +1,2 @@
+module SingletonDemo_2 {
+}
