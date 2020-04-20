@@ -1,0 +1,2 @@
+module ProxyDemo_2 {
+}
