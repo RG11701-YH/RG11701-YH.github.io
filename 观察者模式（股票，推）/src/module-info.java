@@ -1,0 +1,2 @@
+module ObserverDemo_2 {
+}
